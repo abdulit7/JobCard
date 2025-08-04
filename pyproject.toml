@@ -1,0 +1,33 @@
+[project]
+name = "JobCard"
+version = "1.0.0"
+description = "Asset Management Flet Application"
+authors = [
+  {name = "Your Name", email = "your.email@example.com"}
+]
+dependencies = [
+  "flet==0.28.3",
+  "mysql-connector-python"  # Added for sync_server.py
+]
+
+[tool.flet]
+org = "com.example"
+product = "Asset App"
+company = "Your Company"
+copyright = "Copyright (C) 2025 Your Company"
+build_number = 1
+app.module = "main"
+app.path = "."
+app.exclude = ["assets"]
+
+[tool.flet.android]
+adaptive_icon_background = ""
+split_per_abi = false
+
+[tool.flet.android.permission]
+"android.permission.READ_EXTERNAL_STORAGE" = true
+"android.permission.READ_MEDIA_IMAGES" = true
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
+
+[tool.flet.android.feature]
+"android.hardware.camera" = false
