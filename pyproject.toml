@@ -7,7 +7,10 @@ authors = [
 ]
 dependencies = [
   "flet==0.28.3",
-  "mysql-connector-python"  # Added for sync_server.py
+  "mysql-connector-python",  # Added for sync_server.py
+  "flet-audio",
+  "asyncio",
+  "DateTime"
 ]
 
 [tool.flet]
